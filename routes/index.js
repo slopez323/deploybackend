@@ -37,9 +37,7 @@ router.post("/create-user", function (req, res, next) {
     email,
   };
   userList.push(newUser);
-  res.status(200).json("Successfully created user");
-
-  console.log(userList);
+  res.status(200).json(userList);
 });
 
 module.exports = router;
